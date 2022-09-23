@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+:root {
+  /* dark shades */
+  --color-primary1: hsl(205, 86%, 17%);
+  --color-primary2: hsl(205, 77%, 27%);
+  --color-primary3: hsl(205, 72%, 37%);
+  --color-primary4: hsl(205, 63%, 48%);
+  /* the main primary color */
+  --color-primary5: hsl(205, 68%, 60%);
+  /* lighter shades of primary color */
+  --color-primary6: hsl(205, 89%, 70%);
+  --color-primary7: hsl(205, 90%, 77%);
+  --color-primary8: hsl(205, 86%, 81%);
+  --color-primary9: hsl(205, 90%, 88%);
+  --color-primary10: hsl(205, 100%, 96%);
+  /* darkest grey - use for headings */
+  --color-grey1: hsl(209, 61%, 16%);
+  --color-grey2: hsl(211, 39%, 23%);
+  --color-grey3: hsl(209, 34%, 30%);
+  --color-grey4: hsl(209, 28%, 39%);
+  /* grey use for paragraphs */
+  --color-grey5: hsl(210, 22%, 49%);
+  --color-grey6: hsl(209, 23%, 60%);
+  --color-grey7: hsl(211, 27%, 70%);
+  --color-grey8: hsl(210, 31%, 80%);
+  --color-grey9: hsl(212, 33%, 89%);
+  --color-grey10: hsl(210, 36%, 96%);
+  --color-white: #fff;
+  --color-red-dark: hsl(360, 67%, 44%);
+  --color-red-light: hsl(360, 71%, 66%);
+
+  --ff-primary: "Roboto", Sans serif;
+  --ff-secondary: "Open Sans", "Sans serif";
+  --transition: all.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 117rem;
+  --fixed-width: 62rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-secondary);
+  background-color: var(--color-grey10);
+  color: var(--color-grey1);
+  line-height: 1.5;
+  font-size: 62.5%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: var(--ff-primary);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 0.25rem;
+}
+
+h4 {
+  font-size: 0.875rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  color: var(--color-grey5);
+}
+
+main {
+  min-height: calc(100vh - 3rem);
+
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  text-align: center;
+}
+
+.container h2 {
+  background-color: #000;
+  color: var(--color-white);
+  padding: 1rem;
+  border-radius: var(--radius);
+  margin-bottom: 2.5rem;
+}
+
+.color {
+  color: var(--color-primary5);
+}
+
+nav {
+  background-color: var(--color-white);
+  height: 3rem;
+
+  display: grid;
+  align-items: center;
+  box-shadow: var(--dark-shadow);
+}
+
+.nav-center {
+  width: 90vw;
+  max-width: var(--fixed-width);
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-center h4 {
+  margin-bottom: 0;
+  color: var(--color-primary5);
+}
+
+.nav-links {
+  display: flex;
+}
+
+nav a {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--color-primary1);
+  letter-spacing: var(--spacing);
+  margin-right: 1rem;
+}
+
+nav a:hover {
+  color: var(--color-primary5);
+}
+
+.btn-hero {
+  font-family: var(--ff-primary);
+  text-transform: uppercase;
+  background: transparent;
+  color: #000;
+  letter-spacing: var(--spacing);
+  display: inline-block;
+  font-weight: 700;
+  transition: var(--transition);
+  cursor: pointer;
+  border: 2px solid #000;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  padding: 0.75rem 1.25rem;
+}
+
+.btn-hero:hover {
+  color: var(--color-white);
+  background-color: #000;
+}
